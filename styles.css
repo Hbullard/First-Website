@@ -16,7 +16,7 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 header {
@@ -30,10 +30,16 @@ header > img {
     max-width: 50%;
     max-height: 50%;
 }
+header p{
+    text-decoration: underline;
+}
 
 nav ul {
     list-style: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+
     
 }
 
@@ -42,14 +48,39 @@ nav li{
 
 }
 
-#nav a{
-    color: rgb(0, 0, 0);
+.navbar a {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    position: relative;
     
 }
-
-#nav {
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
     background-color: aliceblue;
+    transition: .3s;
 }
+.navbar a:hover::before {
+    width: 100%;
+}
+
+nav {
+    padding: 20px 100px;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border-radius: 25px;
+
+}
+
 
 section {
     display: flex;
