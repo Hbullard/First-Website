@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: aliceblue;
 }
 
@@ -34,11 +34,21 @@ header > img {
 nav ul {
     list-style: none;
     text-align: center;
+    
 }
 
-nav li {
+nav li{
     display: inline-block;
 
+}
+
+#nav a{
+    color: rgb(0, 0, 0);
+    
+}
+
+#nav {
+    background-color: aliceblue;
 }
 
 section {
@@ -68,5 +78,5 @@ footer div > img {
     max-height: 25%;
 }
 
-/* test */ 
+
 
